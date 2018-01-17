@@ -72,3 +72,19 @@ body {
     width: 100%;
     margin-top: 22px;
 }
+
+.item {
+    height: 100px;
+    padding: 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .3);
+    position: relative;
+    font-size: 21px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.item>.box>p {
+    line-hegiht: 60px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
