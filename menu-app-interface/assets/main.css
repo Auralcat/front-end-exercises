@@ -31,3 +31,15 @@ body {
     overflow: hidden;
     border-radius: 4px;
 }
+
+.bar {
+    height: 80px;
+    background: #f7ffce;
+    background: linear-gradient(135deg, #f7ffce, #e2e4b8);
+    border-radius: 4px 4px 0 0;
+    color: #af9a50;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    position: relative;
+    z-index: 5;
+}
