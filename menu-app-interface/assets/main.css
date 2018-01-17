@@ -1,3 +1,16 @@
 * {
     box-sizing: border-box
 }
+
+html, body {
+    height: 100%
+}
+
+body {
+    background: #d3e2d4;
+    background: linear-gradient(135deg, #d3e2d4, #819083) top left fixed;
+    font: 14px 'Ubuntu Condensed', sans-serif;
+    line-height: 1;
+    min-height: 580px;
+    -webkit-font-smoothing: antialiased;
+}
