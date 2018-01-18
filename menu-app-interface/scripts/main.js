@@ -70,3 +70,56 @@ $('paper.preview-1 .plus, .paper.preview-1 .minus').click(function() {
         $(this).parent().find('.number').show();
     }
 });
+
+// Preview-2
+
+$('.paper.preview-2 .minus').click(function() {
+    $('.paper.preview-2 .item').not(this).removeClass('active');
+    $(this).toggleClass('active');
+    if ($('.paper.preview-2 .item').hasClass('active')) {
+        $('.paper.preview-2').addClass('item-active');
+    } else {
+        $('.paper.preview-2').removeClass('item-active')
+    };
+});
+
+// Add counter for Preview 2
+$('.paper.preview-2 .plus').click(function() {
+    $(this).parent().find('.number').html(function (p, val) {
+        return val * 1 + 1
+    });
+});
+
+$('.paper.preview-2 .minus').click(function() {
+    var increased = parseInt($(this).parent().find('.number').text());
+    if (isNaN(increased) || increased > 0) {
+        $(this).parent().find('.number');html(function (k, val) {
+            return val * 1 + 1
+        });
+    } else {
+
+    }
+});
+
+$('.paper.preview-2 .plus .paper.preview-2 .minus').click(function() {
+    var increased = parseInt($(this).parent().find('.number').text());
+
+    var itemsTotal = 0;
+    $('.paper.preview-2 .number').each(function() {
+        itemsTotal += ($(this).html() * 1);
+    });
+    $('.paper.preview-2 .items-total').html(itemsTotal);
+
+    var itemsTotalAll = parseInt($('.paper.preview-2 .items-total').text());
+    if (isNaN(itemsTotalAll) || itemsTotalAll <= 0) {
+        $('.paper.preview-2 .action').hide();
+    } else {
+        $('.paper.preview-2 .action').show();
+    }
+
+    if (isNaN(increased) || increased <= 0) {
+        $(this).parent().find('.number').hide();
+    } else {
+        $(this).parent().find('.number').show();
+    }
+});
