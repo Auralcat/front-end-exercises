@@ -1,11 +1,11 @@
 // Add jQuery
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement("script");
+script.src = "http://code.jquery.com/jquery-1.11.0.min.js";
+script.type = "text/javascript";
+document.getElementsByTagName("head")[0].appendChild(script);
 
 // Checking if jQuery is working:
-if ('undefined' == typeof window.jQuery) {
+if ("undefined" == typeof window.jQuery) {
     // jQuery not present
     alert("jQuery not working");
 } else {
@@ -14,33 +14,32 @@ if ('undefined' == typeof window.jQuery) {
 }
 
 // Preview 1
-$('.paper.preview-1 .item').click(function () {
-    $('.paper.preview-1 .item').not(this).removeClass('active');
-    $(this).toggleClass('active');
-    if ($('.paper.preview-1')).hasClass('active')) {
-    $('.paper.preview-1').addClass('item-active');
-    }
-    else {
-        $('.paper.preview-1').removeClass('item-active');
+$(".paper.preview-1 .item").click(function () {
+    $(".paper.preview-1 .item").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    if ($(".paper.preview-1").hasClass("active")) {
+        $(".paper.preview-1").addClass("item-active");
+    } else {
+        $(".paper.preview-1").removeClass("item-active");
     };
 });
 
 // Preventing closing when click inside counter
-$('.minus, .plus').click(function(a) {
+$(".minus, .plus").click(function(a) {
     a.stopPropagation();
 });
 
 // Adding counter [Preview 1]
-$('.paper.preview-1, .plus').click(function() {
-    $(this).parent().find('.number').html(function (y, val) {
+$(".paper.preview-1, .plus").click(function() {
+    $(this).parent().find(".number").html(function (y, val) {
         return val * 1 + 1;
     });
 });
 
-$('.paper-preview-1 .minus').click(function() {
-    var increased = parseInt($(this).parent().find('.number').text());
+$(".paper-preview-1 .minus").click(function() {
+    var increased = parseInt($(this).parent().find(".number").text());
     if (isNaN(increased) || increased > 0) {
-        $(this).parent().find('.number').html(function(t, val) {
+        $(this).parent().find(".number").html(function(t, val) {
             return val * 1 - 1;
         });
     } else {
@@ -48,52 +47,52 @@ $('.paper-preview-1 .minus').click(function() {
     }
 });
 
-$('paper.preview-1 .plus, .paper.preview-1 .minus').click(function() {
-    var increased = parseInt($(this).parent().find('.number').text());
+$("paper.preview-1 .plus, .paper.preview-1 .minus").click(function() {
+    var increased = parseInt($(this).parent().find(".number").text());
 
     var itemsTotal = 0;
-    $('.paper.preview-1 .number').each(function() {
+    $(".paper.preview-1 .number").each(function() {
         itemsTotal += ($(this).html() * 1);
     });
-    $('.paper.preview-1 .items-total').html(itemsTotal);
+    $(".paper.preview-1 .items-total").html(itemsTotal);
 
-    var itemsTotalAll = parseInt($('.paper.preview-1 .items-total').text());
+    var itemsTotalAll = parseInt($(".paper.preview-1 .items-total").text());
     if (isNaN(itemsTotalAll) || itemsTotalAll <= 0) {
-        $('.paper.preview-1 .action').hide();
+        $(".paper.preview-1 .action").hide();
     } else {
-        $('.paper.preview-1 .action').show();
+        $(".paper.preview-1 .action").show();
     }
 
     if (isNaN(increased) || increased <= 0) {
-        $(this).parent().find('.number').hide();
+        $(this).parent().find(".number").hide();
     } else {
-        $(this).parent().find('.number').show();
+        $(this).parent().find(".number").show();
     }
 });
 
 // Preview-2
 
-$('.paper.preview-2 .minus').click(function() {
-    $('.paper.preview-2 .item').not(this).removeClass('active');
-    $(this).toggleClass('active');
-    if ($('.paper.preview-2 .item').hasClass('active')) {
-        $('.paper.preview-2').addClass('item-active');
+$(".paper.preview-2 .minus").click(function() {
+    $(".paper.preview-2 .item").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    if ($(".paper.preview-2 .item").hasClass("active")) {
+        $(".paper.preview-2").addClass("item-active");
     } else {
-        $('.paper.preview-2').removeClass('item-active')
+        $(".paper.preview-2").removeClass("item-active")
     };
 });
 
 // Add counter for Preview 2
-$('.paper.preview-2 .plus').click(function() {
-    $(this).parent().find('.number').html(function (p, val) {
+$(".paper.preview-2 .plus").click(function() {
+    $(this).parent().find(".number").html(function (p, val) {
         return val * 1 + 1
     });
 });
 
-$('.paper.preview-2 .minus').click(function() {
-    var increased = parseInt($(this).parent().find('.number').text());
+$(".paper.preview-2 .minus").click(function() {
+    var increased = parseInt($(this).parent().find(".number").text());
     if (isNaN(increased) || increased > 0) {
-        $(this).parent().find('.number');html(function (k, val) {
+        $(this).parent().find(".number");html(function (k, val) {
             return val * 1 + 1
         });
     } else {
@@ -101,25 +100,25 @@ $('.paper.preview-2 .minus').click(function() {
     }
 });
 
-$('.paper.preview-2 .plus .paper.preview-2 .minus').click(function() {
-    var increased = parseInt($(this).parent().find('.number').text());
+$(".paper.preview-2 .plus .paper.preview-2 .minus").click(function() {
+    var increased = parseInt($(this).parent().find(".number").text());
 
     var itemsTotal = 0;
-    $('.paper.preview-2 .number').each(function() {
+    $(".paper.preview-2 .number").each(function() {
         itemsTotal += ($(this).html() * 1);
     });
-    $('.paper.preview-2 .items-total').html(itemsTotal);
+    $(".paper.preview-2 .items-total").html(itemsTotal);
 
-    var itemsTotalAll = parseInt($('.paper.preview-2 .items-total').text());
+    var itemsTotalAll = parseInt($(".paper.preview-2 .items-total").text());
     if (isNaN(itemsTotalAll) || itemsTotalAll <= 0) {
-        $('.paper.preview-2 .action').hide();
+        $(".paper.preview-2 .action").hide();
     } else {
-        $('.paper.preview-2 .action').show();
+        $(".paper.preview-2 .action").show();
     }
 
     if (isNaN(increased) || increased <= 0) {
-        $(this).parent().find('.number').hide();
+        $(this).parent().find(".number").hide();
     } else {
-        $(this).parent().find('.number').show();
+        $(this).parent().find(".number").show();
     }
 });

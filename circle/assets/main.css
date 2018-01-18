@@ -1,0 +1,12 @@
+*, *::after, *::before {
+                 box-sizing: inherit;
+}
+
+html, body {
+    background: #ddd;
+    box-sizing: border-box;
+}
+
+.icon {
+
+}
