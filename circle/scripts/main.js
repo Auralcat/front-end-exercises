@@ -17,9 +17,18 @@ var rainbow_ride = "#b3bbd7, #f9e0ea, #f8eed3, #ecefff";
 $(document).ready(function() {
     var original_palette = "#ef4dbc,#bc4bfd,#5c9cfe,#24cffb";
     var toggled = false;
+    var start = "#454556, #D2283F, #F16475, #991B25";
+
     $("button").click(function() {
-        $(".circle") .css({
-            "background-image" : "linear-gradient(to right, " + original_palette + ")"
-        });
+        if (toggled === false) {
+            toggled = true;
+            $(".circle").css({
+                "background-image" : "linear-gradient(to right, " + original_palette + ")"
+            });
+        } else {
+            $(".circle").css({
+                "background-image" : "linear-gradient(to right), " + start + ")"
+            });
+        }
     });
 });
