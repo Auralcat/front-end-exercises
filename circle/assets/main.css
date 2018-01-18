@@ -24,8 +24,8 @@ html, body {
     display: block;
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to right, #ef4dbc, #bc4bfd,
-                                                #5c9cf3, #24cffb);
+    background-image: linear-gradient(to right, #454556, #D2283F,
+                                                #F16475, #991B25);
     border-radius: 50%;
     animation: rot 2s linear infinite;
 }
@@ -53,12 +53,12 @@ html, body {
 
 @keyframes scl {
     0% {
-        transform: scale(.96)
+        transform: scale(.90)
     }
     50% {
         transform: scale(1)
     }
     100% {
-        transform: scale(.96)
+        transform: scale(.90)
     }
 }
