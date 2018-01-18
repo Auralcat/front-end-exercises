@@ -168,3 +168,45 @@ body {
 .item.food .detail .counter div {
     background: #eca9ba;
 }
+
+.item.drink {
+    background: #563761;
+    background: linear-gradient(135deg, #563761, #502f55);
+    z-index: 1;
+    color: #1c1730;
+    border-radius: 0 0 4px 4px;
+}
+
+.item.drink .detail .counter div {
+    background: #8a7193;
+}
+
+.item-icon {
+    background: url(https://image.ibb.co/b6zDSF/items_icons_t.png) no-repeat top left;
+    height: 60px;
+    width: 65px;
+    float: left;
+    margin-right: 10px;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.item-icon.coffee {
+    background-position: 0 0
+}
+
+.item-icon.sweet {
+    background-position: -70px 0
+}
+
+.item-icon.food {
+    background-position: -137px 0
+}
+
+.item-icon.drink {
+    background-position: -207px 0
+}
