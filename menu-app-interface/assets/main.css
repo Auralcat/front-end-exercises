@@ -157,6 +157,14 @@ body {
     background: #fff2be;
 }
 
+
+.item.food {
+    background: #a7a25c;
+    background: linear-gradient(135deg, #a7425c, #993950);
+    z-index: 2;
+    color: #402344;
+}
+
 .item.food .detail .counter div {
     background: #eca9ba;
 }
