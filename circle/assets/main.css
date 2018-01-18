@@ -19,6 +19,7 @@ html, body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
 }
 
+/* Original colors: #ef4dbc,#bc4bfd,#5c9cfe,#24cffb */
 .icon:before {
     content: "";
     display: block;
