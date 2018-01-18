@@ -210,3 +210,10 @@ body {
 .item-icon.drink {
     background-position: -207px 0
 }
+
+/* Active part */
+
+.paper.item-active .item {
+    height: 60px;
+    padding: 0 20px;
+}
