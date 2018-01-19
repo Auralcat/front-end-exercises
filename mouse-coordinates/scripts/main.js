@@ -1,5 +1,4 @@
 // TODO
-// - Use jQuery
 // - Refactor for style
 
 var script = document.createElement("script");
@@ -8,9 +7,9 @@ script.type = "text/javascript";
 document.getElementsByTagName('head')[0].appendChild(script);
 
 $(document).ready(function() {
-    $("button").click(function () {
-        alert("Everything's fine");
-    });
+    // $("button").click(function () {
+    //     alert("Everything's fine");
+    // });
 
     // Now we'll get to the actual work, I guess I needed to reload the file
     // and not the page...?
