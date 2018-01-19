@@ -1,3 +1,9 @@
+"use strict";
+
+// TODO
+// - Use jQuery
+// - Refactor for style
+
 const text = document.querySelector('.mainText');
 const mainContainer = document.querySelector('.container');
 
