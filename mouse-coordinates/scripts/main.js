@@ -1,24 +1,26 @@
-"use strict";
-
 // TODO
 // - Use jQuery
 // - Refactor for style
 
-const text = document.querySelector('.mainText');
-const mainContainer = document.querySelector('.container');
+var script = document.createElement("script");
+script.src = "http://code.jquery.com/jquery-3.2.1.min.js";
+script.type = "text/javascript";
+document.getElementsByTagName('head')[0].appendChild(script);
 
-// Event handler
-mainContainer.addEventListener('mouseover', function(e) {
-    e.preventDefault();
-    // Print coordinates of the mouse on move on the target element
-    text.textContent = `MouseX: ${e.offsetX}, MouseY: ${e.offsetY}`;
+$(document).ready(function() {
+    $("button").click(function () {
+        alert("Everything's fine");
+    });
 
-    // Change body background color taking the coordinates as values of rgb;
-    document.body.style.backgroundColor = `rgb(${e.offsetX}, 180, ${e.offsetY})`;
-});
+    // Now we'll get to the actual work, I guess I needed to reload the file
+    // and not the page...?
+    $(".container").mousemove(function (e) {
+        e.preventDefault();
 
-// jQuery part
-$('.container').mouseover(function(e) {
-    e.preventDefault();
-    $(body).css({"background-color" : `rgb($e.offsetX), 180, offsetY`});
+        $("body").css({
+            'background-color': 'rgb(' + e.offsetX + ', 180, ' + e.offsetY + ')'
+        });
+
+        $(".mainText").text('MouseX: ' + e.offsetX + '; MouseY: ' + e.offsetY);
+    });
 });
