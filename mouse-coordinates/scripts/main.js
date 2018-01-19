@@ -7,7 +7,7 @@
 const text = document.querySelector('.mainText');
 const mainContainer = document.querySelector('.container');
 
-mainContainer.addEventListener("mousemove", runEvent);
+mainContainer.addEventListener('mousemove', runEvent);
 
 // Event handler
 function runEvent(e) {
