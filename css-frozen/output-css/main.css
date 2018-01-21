@@ -1,3 +1,44 @@
+/*
+Error: Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 2 spaces.
+        on line 36 of sass/main.sass
 
+31:   background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%)
+32:   mix-blend-mode: screen
+33:   animation: shine 1s infinite
+34:   background-size: 200%
+35:   text-shadow: 2px 2px 10px rgba(#000 0.2),
+36:                -2px 2px 10px rgba(#000 0.2em),
+37:                -2px 2px 10px rgba(#000 0.2em),
+38: 
+39:  @keyframes shine
+40:    0%
+41:      background-position: 100%
 
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+sass/main.sass:36
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:494:in `block in tabulate'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each_with_index'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `tabulate'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:417:in `_to_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 15 spaces were used for indentation, but the rest of the document was indented using 2 spaces.\A         on line 36 of sass/main.sass\A \A 31:   background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%)\A 32:   mix-blend-mode: screen\A 33:   animation: shine 1s infinite\A 34:   background-size: 200%\A 35:   text-shadow: 2px 2px 10px rgba(#000 0.2),\A 36:                -2px 2px 10px rgba(#000 0.2em),\A 37:                -2px 2px 10px rgba(#000 0.2em),\A 38: \A 39:  @keyframes shine\A 40:    0%\A 41:      background-position: 100%"; }
