@@ -14,14 +14,14 @@ if ("undefined" == typeof window.jQuery) {
 }
 
 // Preview 1
-$(".paper.preview-1 .item").click(function () {
+$(".paper.preview-1 .item").click(function() {
     $(".paper.preview-1 .item").not(this).removeClass("active");
     $(this).toggleClass("active");
     if ($(".paper.preview-1").hasClass("active")) {
         $(".paper.preview-1").addClass("item-active");
     } else {
         $(".paper.preview-1").removeClass("item-active");
-    };
+    }
 });
 
 // Preventing closing when click inside counter
@@ -31,7 +31,7 @@ $(".minus, .plus").click(function(a) {
 
 // Adding counter [Preview 1]
 $(".paper.preview-1, .plus").click(function() {
-    $(this).parent().find(".number").html(function (y, val) {
+    $(this).parent().find(".number").html(function(y, val) {
         return val * 1 + 1;
     });
 });
@@ -78,22 +78,23 @@ $(".paper.preview-2 .minus").click(function() {
     if ($(".paper.preview-2 .item").hasClass("active")) {
         $(".paper.preview-2").addClass("item-active");
     } else {
-        $(".paper.preview-2").removeClass("item-active")
-    };
+        $(".paper.preview-2").removeClass("item-active");
+    }
 });
 
 // Add counter for Preview 2
 $(".paper.preview-2 .plus").click(function() {
-    $(this).parent().find(".number").html(function (p, val) {
-        return val * 1 + 1
+    $(this).parent().find(".number").html(function(p, val) {
+        return val * 1 + 1;
     });
 });
 
 $(".paper.preview-2 .minus").click(function() {
     var increased = parseInt($(this).parent().find(".number").text());
     if (isNaN(increased) || increased > 0) {
-        $(this).parent().find(".number");html(function (k, val) {
-            return val * 1 + 1
+        $(this).parent().find(".number");
+        html(function(k, val) {
+            return val * 1 + 1;
         });
     } else {
 
