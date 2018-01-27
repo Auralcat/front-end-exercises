@@ -2,7 +2,9 @@ body {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
   font-family: "Ubuntu", sans-serif;
-  margin: 0; }
+  margin: 0;
+  background: #firefox_grey;
+  color: #0c0c0d; }
 
 /* BUTTON STYLES */
 .button-micro {
@@ -14,7 +16,7 @@ body {
   width: auto; }
 
 .button-default {
-  background: #a6a6b4; }
+  background: #dddde3; }
 
 .button-primary {
   background: #0060df;
@@ -23,6 +25,7 @@ body {
   padding: 0 8px;
   font-size: 13px;
   font-weight: 400;
+  color: white;
   width: 132px auto; }
 
 .button-ghost {
