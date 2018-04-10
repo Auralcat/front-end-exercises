@@ -9,10 +9,17 @@
   text-align: center;
 }
 
+/* It'd be nice to have a way to dimension the card automatically, depending on
+   the content inside it. Probably doable with Flexbox.
+   Then you could use:
+   - flex-direction: row -> for horizontal cards
+   - flex-direction: column -> for vertical cards
+*/
 .card {
+  /* You could change the card dimensions using a Sass mixin */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  /* You could change the card dimensions using a Sass mixin */
+  margin: auto;
 }
 
 .vertical {
