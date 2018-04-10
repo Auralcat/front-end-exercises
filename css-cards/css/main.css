@@ -1,0 +1,30 @@
+/* Custom CSS file. */
+
+.card-container {
+  /* Holds all the cards */
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 80%;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 320px;
+  width: 240px;
+}
+
+.card-image-container {
+  padding: 16px;
+}
+
+.card-photo {
+  width: 100%;
+}
+
+.text-panel {
+  padding: 2px 16px;
+  text-align: justify;
+}
