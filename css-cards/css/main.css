@@ -1,5 +1,4 @@
-/* Custom CSS file. */
-
+/* Custom SCSS file. */
 .card-container {
   /* Holds all the cards */
   display: flex;
@@ -7,7 +6,7 @@
   justify-content: space-evenly;
   width: 80%;
   text-align: center;
-}
+  background: #c0ffee; }
 
 /* What do these two classes have in common? How can I modularize */
 /* them? */
@@ -17,8 +16,7 @@
   transition: 0.3s;
   height: 100%;
   width: auto;
-  margin: 12px;
-}
+  margin: 12px; }
 
 .card-horizontal {
   /* You could change the card dimensions using a Sass mixin */
@@ -26,20 +24,21 @@
   transition: 0.3s;
   height: 100%;
   width: auto;
-  display: flex;
   margin: 12px;
-}
+  display: flex; }
 
 .card-image-container {
-  padding: 0;
-}
+  padding: 0; }
 
 .card-photo {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 .text-panel {
   padding: 2px 16px;
-  text-align: justify;
-}
+  text-align: justify; }
+
+.card-text {
+  color: blue; }
+
+/*# sourceMappingURL=main.css.map */
