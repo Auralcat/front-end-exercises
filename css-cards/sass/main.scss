@@ -16,7 +16,6 @@
   justify-content: space-evenly;
   width: 80%;
   text-align: center;
-  background: #c0ffee;
 }
 
 /* What do these two classes have in common? How can I modularize */
@@ -47,5 +46,6 @@
 }
 
 .card-text {
-  color: blue
-  }
+  font-family: Sans-Serif;
+  color: red;
+}

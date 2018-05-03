@@ -5,8 +5,7 @@
   align-items: normal;
   justify-content: space-evenly;
   width: 80%;
-  text-align: center;
-  background: #c0ffee; }
+  text-align: center; }
 
 /* What do these two classes have in common? How can I modularize */
 /* them? */
@@ -39,6 +38,7 @@
   text-align: justify; }
 
 .card-text {
-  color: blue; }
+  font-family: Sans-Serif;
+  color: red; }
 
 /*# sourceMappingURL=main.css.map */
